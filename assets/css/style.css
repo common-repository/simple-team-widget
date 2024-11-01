@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+body {
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #fff;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Mulish', sans-serif;
+    color: #7F92A3;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+    color: #222222;
+    text-decoration: none !important
+}
+
+input {
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+    outline: none;
+}
+
+
+img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #092C4C;
+    font-weight: 700;
+    font-family: 'Mulish', sans-serif;
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+p:last-child {
+    margin: 0;
+}
+
+
+
+/*---------------------------------------------------
+HOME PAGE STYLESHEET 
+----------------------------------------------------*/
+.stw-team-item{
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #F8F8F8;
+    background-color: #fff;
+    transition: all 0.4s;
+}
+.stw-team-item:hover {
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05);
+}
+.stw-team-thumb{
+    height: 380px;
+    position: relative;
+}
+@media only screen and (max-width: 1199px) {
+    .stw-team-thumb{
+        height: auto;
+    }
+}
+.stw-team-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.stw-team-data {
+    padding: 15px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.stw-team-social ul li{
+    margin: 0 13px;
+    display: inline-block;
+}
+.stw-team-social ul li:first-child{
+    margin-left: 0;
+}
+.stw-team-social ul li:last-child{
+    margin-right: 0;
+}
+.stw-team-social ul li a{
+    font-size: 20px;
+    color: #001737;
+    transition: all 0.4s;
+}
+.stw-team-social ul li path{
+    transition: all 0.4s;
+}
+
+
+
+/* style two */
+.style-two .stw-team-social {
+    position: absolute;
+    bottom: 0;
+    background: #FFFFFF;
+    opacity: 0.9;
+    border-radius: 3px;
+    padding: 10px 20px;
+    width: calc(100% - 50px);
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.stw-team-item:hover.style-two .stw-team-social{
+    opacity: 1;
+    bottom: 25px;
+    visibility: visible;
+}
+
+/* style three */
+.stw-team-item.style-three{
+    border: none;
+    background-color: transparent;
+}
+.style-three .stw-team-thumb {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.style-three .stw-team-data {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 22px 10px;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 22, 42, 0.8);
+}
+.stw-team-item:hover.style-three .stw-team-data{
+    opacity: 1;
+    visibility: visible;
+}
+.style-three .stw-team-social ul li {
+    margin: 0 8px;
+    display: inline-block;
+}
+.style-three .stw-team-social ul li a{
+    color: #fff;
+}
+.style-three .stw-team-data h4{
+    color: #fff;
+}
+.style-three .stw-team-data p{
+    margin-bottom: 15px;
+    color: #D7E0E7;
+}
+
+/* style four */
+
+.stw-team-item.style-four {
+    background: #FFFFFF;
+    padding: 32px;
+    transition: all 0.4s;
+    box-shadow: 0px 10px 60px rgb(0 0 0 / 5%);
+}
+.stw-team-item.style-four:hover  {
+    box-shadow: 0px 20px 60px rgb(0 0 0 / 8%);
+}
+.style-four .stw-team-thumb {
+    width: 206px;
+    height: 206px;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    border-radius: 100%;
+
+}
+.style-four .stw-team-data {
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+.stw-team-item:hover.style-four .stw-team-data {
+    box-shadow: none;
+}
+
+/* style five */
+
+.stw-team-item.style-five {
+    margin-bottom: 60px;
+}
+.style-five .stw-team-data {
+    background: #FFFFFF;
+    border-radius: 3px;
+    position: absolute;
+    width: calc(100% - 50px);
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    bottom: -30px;
+    box-shadow: 0px 15px 50px rgb(0 0 0 / 5%);
+    padding: 20px;
+    height: 70px;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+.stw-team-item.style-five:hover .stw-team-data {
+    height: 145px;
+}
+.style-five .stw-team-data p{
+    opacity: 0;
+    transition: all 0.4s;
+    visibility: hidden;
+}
+.style-five .stw-team-social {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.stw-team-item.style-five:hover .stw-team-data p, 
+.stw-team-item.style-five:hover .stw-team-social{
+    opacity: 1;
+    visibility: visible;
+}
+
+.style-six .stw-team-data {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.style-six .stw-team-thumb:hover .stw-team-data{
+    opacity: 1;
+    bottom: 20px;
+    visibility: visible;
+}
+.style-six .stw-team-data h4{
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.style-six .stw-team-data p{
+    color: #D7E0E7;
+}
+
+.style-six .stw-team-thumb:before{
+    content:"";
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s;
+    background: linear-gradient(180deg, rgba(0, 5, 19, 0) 32.29%, #000512 100%);
+}
+.style-six .stw-team-thumb:hover:before{
+    opacity: 1;
+}
+
+.stw-team-social.false {
+    display: none;
+}
